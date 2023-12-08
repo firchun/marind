@@ -1,9 +1,7 @@
-// Tangkap elemen navbar
+
 var navbar = document.querySelector('.fixed-top');
 var navbarToggler = document.querySelector('.navbar-toggler');
-// Tambahkan event listener untuk event scroll
 window.addEventListener('scroll', function () {
-    // Periksa posisi scroll
     if (window.scrollY >= navbar.offsetHeight) {
         navbar.classList.add('bg-dark')
     } else {
@@ -18,3 +16,26 @@ navbarToggler.addEventListener('click', function () {
         navbar.classList.add('bg-dark');
     }
 });
+
+
+//ganti bahasa
+function switchLanguage(lang) {
+    //tombol
+    var languageButtons = document.querySelectorAll('.dropdown-item');
+
+        languageButtons.forEach(function (button) {
+            button.classList.remove('active');
+            button.classList.add('text-white');
+        });
+
+        event.target.classList.add('active');
+
+        //terjemahan
+    document.getElementById("home").innerText = (lang === "en") ? "Home" : "Beranda";
+    document.getElementById("warisan-budaya").innerText = (lang === "en") ? "Cultural Heritage" : "Warisan Budaya";
+    document.getElementById("kuliner").innerText = (lang === "en") ? "Culinary" : "Kuliner";
+    document.getElementById("Handcraft").innerText = (lang === "en") ? "Handcraft" : "Kerajinan Tangan";
+    document.getElementById("event").innerText = (lang === "en") ? "Event" : "Acara";
+    document.getElementById("languange").innerText = (lang === "en") ? "EN" : "ID";
+    document.getElementById("news").innerText = (lang === "en") ? "News" : "Berita";
+}
