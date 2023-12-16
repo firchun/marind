@@ -71,11 +71,11 @@ header {
 }
 .carousel-caption h1{
     font-size: 5vh;
-    font-family: Scream Again;
+    font-family: 'Scream Again', sans-serif;
 }
 .carousel-caption p{
   font-size:40px;
-  font-family: Cookie;
+  font-family: 'Cookie', cursive;
 }
 .carousel-item img {
     width: 100%;
@@ -434,12 +434,12 @@ h1{
   background: #FFF;
   filter: drop-shadow(0px 10px 20px rgba(0, 0, 0, 0.229));
   margin-bottom: 50px;
-  border: transparent solid 2px; /* Set a transparent border initially */
-  transition: border 0.5s ease; /* Adjust the transition duration as needed */
+  border: transparent solid 2px; 
+  transition: border 0.5s ease; 
 }
 
 .card:hover {
-  border: rgb(0, 0, 0) solid 2px; /* Change the border color on hover */
+  border: rgb(0, 0, 0) solid 2px; 
 }
 .card img {
   transition: 0.3s;
