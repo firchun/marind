@@ -42,6 +42,14 @@ function switchLanguage(lang) {
     document.getElementById("carousel-description").innerText = (lang === "en") ? "the Thick Culture in South Papua" : "Budaya Kental di Papua Selatan";
     document.getElementById("description-galery").innerText = (lang === "en") ? "Description" : "Keterangan singkat";
     document.getElementById("title-galery").innerText = (lang === "en") ? "Gallery of the Marind tribe" : "Galeri suku Marind";
+    document.getElementById("about").innerText = (lang === "en") ? "About" : "Tentang";
+    document.getElementById("about-content").innerText = (lang === "en") ? "Scanfcode.com CODE WANTS TO BE SIMPLE is an initiative to help the upcoming programmers with the code. Scanfcode focuses on providing the most efficient code or snippets as the code wants to be simple. We will help programmers build up concepts in different programming languages that include C, C++, Java, HTML, CSS, Bootstrap, JavaScript, PHP, Android, SQL and Algorithm" : "Scanfcode.com CODE INGIN MENJADI SEDERHANA adalah sebuah inisiatif untuk membantu programmer yang akan datang dengan kode tersebut. Scanfcode berfokus pada penyediaan kode atau cuplikan yang paling efisien karena kodenya ingin sederhana. Kami akan membantu pemrogram membangun konsep dalam berbagai bahasa pemrograman yang mencakup C, C++, Java, HTML, CSS, Bootstrap, JavaScript, PHP, Android, SQL, dan Algoritma";
+    document.getElementById("subscribe").innerText = (lang === "en") ? "Subscribe" : "Berlangganan";
+    document.getElementById("read-more").innerText = (lang === "en") ? "Read More.." : "Baca Selengkapnya..";
+    document.getElementById("read-news-1").innerText = (lang === "en") ? "Read News" : "Baca Berita";
+    document.getElementById("read-news-2").innerText = (lang === "en") ? "Read News" : "Baca Berita";
+    document.getElementById("read-news-3").innerText = (lang === "en") ? "Read News" : "Baca Berita";
+    document.getElementById("read-news-4").innerText = (lang === "en") ? "Read News" : "Baca Berita";
 }
 $('.portfolio-menu ul li').click(function(){
     $('.portfolio-menu ul li').removeClass('active');
