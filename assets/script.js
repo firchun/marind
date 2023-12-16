@@ -38,4 +38,25 @@ function switchLanguage(lang) {
     document.getElementById("event").innerText = (lang === "en") ? "Event" : "Acara";
     document.getElementById("languange").innerText = (lang === "en") ? "EN" : "ID";
     document.getElementById("news").innerText = (lang === "en") ? "News" : "Berita";
+    document.getElementById("carousel-title").innerText = (lang === "en") ? "We're Marind Anim" : "Kami Marind Anim";
+    document.getElementById("carousel-description").innerText = (lang === "en") ? "the Thick Culture in Papua Selatan" : "Budaya Kental di Papua Selatan";
 }
+$('.portfolio-menu ul li').click(function(){
+    $('.portfolio-menu ul li').removeClass('active');
+    $(this).addClass('active');
+    
+    var selector = $(this).attr('data-filter');
+    $('.portfolio-item').isotope({
+        filter:selector
+    });
+    return  false;
+});
+$(document).ready(function() {
+    var popup_btn = $('.popup-btn');
+    popup_btn.magnificPopup({
+        type: 'image',
+        gallery: {
+            enabled: true
+        }
+    });
+});

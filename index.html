@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha384-3B6NwesSXE7YJlcLI9RpRqGf2p/EgVH8BgoKTaUrmKNDkHPStTQ3EyoYjCGXaOTS" crossorigin="anonymous">
 
     <link rel="icon" href="assets/icon/favicon.png" type="image/x-icon">
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css" />
 </head>
 <body >
     <header class="fixed-top bg-dark">
@@ -90,13 +90,13 @@
         <div class="carousel-inner">
           <div class="carousel-item active" data-bs-interval="40000">
             <video class="img-fluid" autoplay loop muted>
-              <source src="assets/video/Budaya.m4v" type="video/mp4" />
+              <source src="assets/video/Budaya.mp4" type="video/mp4" />
             </video>
            <div class="overlay"></div> 
            <div class="container">
               <div class="carousel-caption " data-bs-interval="5000">
-                <h1>We're Marind Anim</h1>
-                <p>the Thick Culture in Merauke</p>
+                <h1 id="carousel-title">We're Marind Anim</h1>
+                <p id="carousel-description">the Thick Culture in Papua Selatan</p>
               </div>
             </div>
           </div>
@@ -105,8 +105,8 @@
            <div class="overlay"></div> 
            <div class="container">
               <div class="carousel-caption " data-bs-interval="5000">
-                <h1>We're Marind Anim</h1>
-                <p>the Thick Culture in Merauke</p>
+                <h1 id="carousel-title">We're Marind Anim</h1>
+                <p id="carousel-description">the Thick Culture in Papua Selatan</p>
               </div>
             </div>
           </div>
@@ -115,8 +115,8 @@
             <div class="overlay"></div>
             <div class="container">
               <div class="carousel-caption">
-                <h1>We're Marind Anim</h1>
-                <p>the Thick Culture in Merauke</p>
+                <h1 id="carousel-title">We're Marind Anim</h1>
+                <p id="carousel-description">the Thick Culture in Papua Selatan</p>
               </div>
             </div>
           </div>
@@ -255,7 +255,7 @@
   </a>
 </div>
 </section>
-    <section class="galery" style=" background-image: linear-gradient(to bottom, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0) 100%), url('assets/images/background.png');">
+    <section class="galery" style=" background-image: linear-gradient(to bottom, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0.16) 100%), url('assets/images/background.png');">
         <div class=" fw-bold text-center ">
           <h1 style="color: black;">Gallery of the Marind tribe</h1>
           <hr class="bottom-title">
@@ -263,11 +263,49 @@
       <div class="sub-title">
           <span>Keterangan singkat</span>
       </div>
-      <div class="row">
-        <div class="col-lg-3 col-md-6">
-test
+      <div class="container">
+
+        <div class="galery-item row justify-content-center">
+     
+        <div class="item  col-lg-3 col-md-6 col-sm">
+           <a href="assets/images/contoh3.jpg" class="fancylight popup-btn" data-fancybox-group="light"> 
+           <img class="img-fluid" src="assets/images/contoh3.jpg" alt="">
+           <p>
+            Gambar
+          </p>
+           </a>
         </div>
-      </div>
+        <div class="item  col-lg-3 col-md-6 col-sm">
+           <a href="assets/images/contoh1.jpg" class="fancylight popup-btn" data-fancybox-group="light"> 
+           <img class="img-fluid" src="assets/images/contoh1.jpg" alt="">
+           <p>
+            Gambar
+          </p>
+           </a>
+        </div>
+        <div class="item  col-lg-3 col-md-6 col-sm">
+           <a href="assets/images/contoh2.jpg" class="fancylight popup-btn" data-fancybox-group="light">
+             <img class="img-fluid" src="assets/images/contoh2.jpg" alt="">
+             <p>
+               Gambar
+             </p>
+           </a>
+        </div>
+        <div class="item  col-lg-3 col-md-6 col-sm">
+          <a href="assets/images/contoh.jpg" class="fancylight popup-btn" data-fancybox-group="light">
+            <img class="img-fluid" src="assets/images/contoh.jpg" alt="">
+            <p>
+              Gambar
+            </p>
+            </a>
+        </div>
+        </div>
+        <div class="text-center py-4">
+          <a href="#" class="btn btn-danger">
+            Lihat dokumentasi lainnya..
+            </a>
+          </div>
+     </div>
     </section>
     <section class="">
         <footer class="site-footer">
@@ -313,8 +351,14 @@ test
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.10.2/umd/popper.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.min.js"></script>
-    
+   
     <script src="assets/script.js"></script>
-    
+
+   <!-- Include jQuery -->
+<script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+
+<!-- Include Magnific Popup CSS and JS files -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
+
 </body>
 </html>
