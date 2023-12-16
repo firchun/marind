@@ -39,7 +39,3 @@ function switchLanguage(lang) {
     document.getElementById("languange").innerText = (lang === "en") ? "EN" : "ID";
     document.getElementById("news").innerText = (lang === "en") ? "News" : "Berita";
 }
-document.addEventListener('DOMContentLoaded', function () {
-    var myCarousel = new bootstrap.Carousel(document.getElementById('myCarousel'));
-    myCarousel.pause(); 
-});
