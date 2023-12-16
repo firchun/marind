@@ -382,7 +382,10 @@ h1{
   opacity :1;
 }
 .btn-secondary{
-  background-color: #191919; 
+  background-color: #191919;
+  border: none; 
+  transition: background-color 0.5s ease, box-shadow 0.5s ease;
+
 }
 .btn-secondary:hover{
   background-color: #191919; 
@@ -390,6 +393,9 @@ h1{
 }
 .btn-primary{
   background-color: #003A92; 
+  border: none; 
+  transition: background-color 0.5s ease, box-shadow 0.5s ease;
+}
 }
 .btn-primary:hover{
   background-color: #003A92; 
@@ -397,6 +403,8 @@ h1{
 }
 .btn-danger{
   background-color: #F00; 
+  border: none; 
+  transition: background-color 0.5s ease, box-shadow 0.5s ease;
 }
 .btn-danger:hover{
   background-color: #F00; 
@@ -415,12 +423,17 @@ h1{
   justify-content: center;
   margin-left: 5px;
 }
-.card{
+.card {
   border-radius: 29px;
   background: #FFF;
-  filter : drop-shadow(0px 10px 20px rgba(0, 0, 0, 0.229));
+  filter: drop-shadow(0px 10px 20px rgba(0, 0, 0, 0.229));
   margin-bottom: 50px;
-  border: none;
+  border: transparent solid 2px; /* Set a transparent border initially */
+  transition: border 0.5s ease; /* Adjust the transition duration as needed */
+}
+
+.card:hover {
+  border: rgb(0, 0, 0) solid 2px; /* Change the border color on hover */
 }
 .card img {
   transition: 0.3s;
@@ -473,12 +486,13 @@ h1{
   height: 100%;
   object-fit: cover;
   border-radius: 5px;
-  transition: box-shadow 0.3s ease;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 5px 10px; 
+  transition: box-shadow 0.5s ease, border 0.5s ease; 
 }
 
 .galery-item .item:hover img {
   box-shadow: rgb(3, 3, 3) 10px 10px;
-  /* border: rgb(53, 53, 53) solid 2px; */
+  border: rgb(0, 0, 0) solid 3px;
 }
 .item p {
   position: absolute;
@@ -491,4 +505,5 @@ h1{
   color: white; 
   border-radius: 5px;
   background: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(0, 0, 0, 0.764) 50%);
+  font-weight: bold;
 }

@@ -35,11 +35,13 @@ function switchLanguage(lang) {
     document.getElementById("warisan-budaya").innerText = (lang === "en") ? "Cultural Heritage" : "Warisan Budaya";
     document.getElementById("kuliner").innerText = (lang === "en") ? "Culinary" : "Kuliner";
     document.getElementById("Handcraft").innerText = (lang === "en") ? "Handcraft" : "Kerajinan Tangan";
-    document.getElementById("event").innerText = (lang === "en") ? "Event" : "Acara";
+    document.getElementById("event").innerText = (lang === "en") ? "Event" : "Kegiatan";
     document.getElementById("languange").innerText = (lang === "en") ? "EN" : "ID";
     document.getElementById("news").innerText = (lang === "en") ? "News" : "Berita";
     document.getElementById("carousel-title").innerText = (lang === "en") ? "We're Marind Anim" : "Kami Marind Anim";
-    document.getElementById("carousel-description").innerText = (lang === "en") ? "the Thick Culture in Papua Selatan" : "Budaya Kental di Papua Selatan";
+    document.getElementById("carousel-description").innerText = (lang === "en") ? "the Thick Culture in South Papua" : "Budaya Kental di Papua Selatan";
+    document.getElementById("description-galery").innerText = (lang === "en") ? "Description" : "Keterangan singkat";
+    document.getElementById("title-galery").innerText = (lang === "en") ? "Gallery of the Marind tribe" : "Galeri suku Marind";
 }
 $('.portfolio-menu ul li').click(function(){
     $('.portfolio-menu ul li').removeClass('active');
