@@ -89,7 +89,7 @@
     </header>
     <!-- end header -->
     <!-- start carousel -->
-    <section id="top">
+    <section id="top" class="header">
 
       <div id="myCarousel" class="carousel slide carousel-fade
       " data-bs-ride="carousel"  >
@@ -140,8 +140,8 @@
     </section>
      <!-- end carousel -->
      <!-- start feature -->
-      <section class="container-rounded">
-        <div class="container  ">
+      <section class="container-rounded ">
+        <div class="container  d-none d-md-block">
             <section class="my-4">
                 <div class="row justify-content-center">
                  <div class="col-lg-3 col-md-6">
@@ -184,7 +184,65 @@
                  </div>
                 </div>
             </section>
-           
+        </div>
+        <div class="container d-block d-md-none" style="overflow-x: auto; padding: 20px;">
+          <div id="feature" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators mt-4">
+              <button type="button" data-bs-target="#feature" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#feature" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#feature" data-bs-slide-to="2" aria-label="Slide 3"></button>
+              <button type="button" data-bs-target="#feature" data-bs-slide-to="3" aria-label="Slide 4"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <div class=" mb-4  border-0 text-center " >
+                  <img src="assets/icon/honai.png" class="card-img-top mx-auto d-block" style="width: auto; height:30vh;" alt="..." loading="lazy">
+                  <div class="p-2">
+                    <h5 class="card-title fw-bold mb-4">Very strong culture</h5>
+                    <p class="card-text">One of the places with a rich tradition and culture that still follows its ancestors.</p>
+                    
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item ">
+                <div class=" mb-4 border-0 text-center" >
+                  <img src="assets/icon/tifa.png" class="card-img-top mx-auto d-block" style="width: auto; height:30vh;" alt="..." loading="lazy">
+                  <div class="p-2">
+                      <h5 class="card-title fw-bold mb-4" ">Regular customs</h5>
+                      <p class="card-text" >Many traditional events take place on specific days every year.</p>
+                  </div>
+              </div>
+              </div>
+              <div class="carousel-item ">
+                <div class=" mb-4  border-0 text-center" >
+                  <img src="assets/icon/people.png" class="card-img-top mx-auto d-block" style="width: auto; height:30vh;" alt="..." loading="lazy">
+                  <div class="p-2">
+                      <h5 class="card-title fw-bold mb-4">The majority of the population
+                      </h5>
+                      <p class="card-text">The natural resources produced are in the form of plants and animals.</p>
+                    </div>
+           </div>
+              </div>
+              <div class="carousel-item ">
+                <div class=" mb-4  border-0 text-center" >
+                  <img src="assets/icon/cendrawasih.png" class="card-img-top mx-auto d-block" style="width: auto; height:30vh;" alt="..." loading="lazy">
+                  <div class="p-2">
+                      <h5 class="card-title fw-bold mb-4">Natural resources.</h5>
+                      <p class="card-text">One of the places with a rich tradition and culture that still follows its ancestors.</p>
+                    </div>
+           </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#feature" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#feature" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+          
         </div>
     </section>
     <!-- end feature -->
@@ -198,7 +256,7 @@
             <p class="about-content">
               Kata Anim berarti laki-laki (anem untuk laki-laki, anum untuk perempuan). Suku bangsa ini memiliki sejumlah sub-suku bangsa, seperti orang Kanum-Anim, Yei-Anim atau Yei-Nan, Yab-Anim, Maklew-Anim dan Kurkari-Anim (Di Papua Nugini). Sedangkan suku bangsa tetangganya antara lain adalah orang Yelmek di sebelah barat laut, orang Manikor (Mani) dan Kurhari di sebelah timur, orang Manggrat-Rik di bagian hilir sungai Maro, Orang Boazi di dekat Danau Fly dan Murray yang airnya mengalir ke wilayah Papua Nugini.
             </p>
-            <a href="#" class="btn btn-danger" id="read-more">
+            <a href="#" class="btn btn-danger mb-4" id="read-more">
               Read More.. <i class="fa fa-arrow-circle-right"></i>
               </a>
           </div>
@@ -454,15 +512,15 @@
                 <div class="divider"></div>
               </div>
               <div class="row">
-                <div class="col-lg-4 col-md-6 col-12">
+                <div class="col-lg-4 col-md-6 ">
                   <div class="footer-logo">
                     <img src="assets/images/musamus.png" alt="unmus">
                     <img src="assets/images/polines.png" alt="polines">
                   </div>
                 </div>
-                <div class="col-lg-8 col-md-6 col-12">
+                <div class="col-lg-8 col-md-6 ">
                   <div class="row">
-                    <div class="col-lg-3 col-md-6">
+                    <div class="col-lg-3 col-6">
                       <hr class="border-white border-3">
                       <h4>Marind Anim</h4>
                       <div class="vertical-links">
@@ -473,7 +531,7 @@
                         <a href="#" >Privaci Policy</a>
                       </div>
                     </div>
-                    <div class="col-lg-3  col-md-6">
+                    <div class="col-lg-3  col-6">
                       <hr class="border-primary border-3">
                       <h4>Ikuti Kami</h4>
                       <div class="vertical-links">
@@ -484,7 +542,7 @@
                         <a href="#" class="text-primary">Twitter</a>
                       </div>
                     </div>
-                    <div class="col-lg-3 col-md-6">
+                    <div class="col-lg-3 col-6">
                       <hr class="border-warning border-3 ">
                       <h4>Warisan Budaya</h4>
                       <div class="vertical-links">
@@ -494,7 +552,7 @@
                         <a href="#" >Kuliner</a>
                       </div>
                     </div>
-                    <div class="col-lg-3 col-md-6">
+                    <div class="col-lg-3 col-6">
                       <hr class="border-danger border-3 ">
                       <h4>Handcraft</h4>
                       <div class="vertical-links">
@@ -515,7 +573,7 @@
                 </div>
                 <div class="col-lg-8 col-md-6 col-12">
                   <div class="row">
-                    <div class="col-lg-3 col-md-6">
+                    <div class="col-lg-3 col-6">
                       <hr class="border-white border-3">
                       <h4>Sejarah</h4>
                       <div class="vertical-links">
@@ -524,7 +582,7 @@
                         <a href="#" >Persebaran</a>
                       </div>
                     </div>
-                    <div class="col-lg-3  col-md-6">
+                    <div class="col-lg-3  col-6">
                       <hr class="border-primary border-3">
                       <h4>News</h4>
                       <div class="vertical-links">
@@ -534,7 +592,7 @@
                         <a href="#" >Pesta Budaya</a>
                       </div>
                     </div>
-                    <div class="col-lg-3 col-md-6">
+                    <div class="col-lg-3 col-6">
                       <hr class="border-warning border-3 ">
                       <h4>Galery</h4>
                       <div class="vertical-links">
@@ -543,7 +601,7 @@
                         <a href="#" >Penyambutan</a>
                       </div>
                     </div>
-                    <div class="col-lg-3 col-md-6">
+                    <div class="col-lg-3 col-6">
                       <hr class="border-danger border-3 ">
                       <h4>Event</h4>
                       <div class="vertical-links">
