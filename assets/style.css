@@ -367,6 +367,20 @@ button.navbar-toggler:active
 {
   background-color:#ea4c89
 }
+.social-icons a.back-to-top {
+  background-color: white;
+  color: red;
+  border-radius: 5px !important;
+  width: 40px;
+  height: 40px;
+  margin-left: 20px;
+  transition: border 0.3s ease, box-shadow 0.3s ease;
+}
+
+.social-icons a.back-to-top:hover {
+  color: black;
+  box-shadow: rgba(251, 251, 251, 0.25) 0px 10px 10px, rgba(255, 255, 255, 0.22) 0px 5px 5px;
+}
 @media (max-width:767px)
 {
   .social-icons li.title
@@ -402,7 +416,7 @@ h1{
   border: none; 
   transition: background-color 0.5s ease, box-shadow 0.5s ease;
 }
-}
+
 .btn-primary:hover{
   background-color: #003A92; 
   box-shadow: rgba(1, 26, 128, 0.4) 5px 5px, rgba(1, 26, 128, 0.3) 10px 10px, rgba(1, 26, 128, 0.2) 15px 15px, rgba(1, 26, 128, 0.1) 20px 20px, rgba(1, 26, 128, 0.05) 25px 25px;
@@ -436,6 +450,10 @@ h1{
   margin-bottom: 50px;
   border: transparent solid 2px; 
   transition: border 0.5s ease; 
+
+  max-width: 20rem;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .card:hover {
@@ -570,4 +588,95 @@ h1{
 .border-light{
   opacity: 1;
   background-color: white;
+}
+.slide-up {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.slide-up.animate {
+  opacity: 1;
+  transform: translateY(0);
+}
+.footer-header  {
+  display: flex;
+  align-items: center;
+}
+.footer-header img {
+  width: 15%;
+  height: auto;
+  margin-bottom: 20px !important;
+  margin: 0 auto;
+  display: block;
+  padding-left: 10px;
+  padding-right: 10px;
+
+}
+@media (max-width: 767px) {
+  .footer-header img {
+    width: 40%;
+  }
+}
+.divider {
+  content: "";
+  top: 0;
+  width: 40%; 
+  height: 3px;
+  background-color: rgb(255, 255, 255);
+}
+@media (max-width: 767px) {
+  .divider {
+    height: 1px;
+  }
+}
+.teams{
+  background-color: white;
+  position: relative;
+  margin-top: -0.4vw;
+  padding-top: 50px;
+  padding-bottom: -8vw;
+  z-index: 3;
+  min-height: 300px;
+}
+.teams .card {
+  padding-bottom: 10px;
+  max-width: 18rem;
+  margin-bottom: 80px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.teams .card .card-title .name{
+  font-size: 20px !important;
+  text-transform: capitalize;
+}
+.teams .card .card-title .npm{
+  font-size: 16px !important;
+  
+}
+.teams .card img {
+  transition: 0.3s;
+  width: auto !important;
+  height: 250px;
+  /* display: block;  */
+  margin: -50px auto 0px auto !important;
+  border-radius: 0px !important;
+  box-shadow: none !important;
+}
+.teams .card .jabatan-develop{
+  padding: 5px;
+  background-color: #000;
+  border-radius: 10px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  color: white;
+}
+.teams .card .jabatan-tim{
+  padding: 5px;
+  background-color: #ECEEEF;
+  border-radius: 10px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  font-weight: bold;
 }

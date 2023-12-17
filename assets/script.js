@@ -70,3 +70,36 @@ $(document).ready(function() {
         }
     });
 });
+//animasi
+class SlideUp {
+    constructor(selector) {
+      this.elements = document.querySelectorAll(selector);
+      this.handleScroll = this.handleScroll.bind(this);
+  
+      // Initial check on page load
+      this.handleScroll();
+  
+      // Listen for scroll events
+      window.addEventListener("scroll", this.handleScroll);
+    }
+  
+    isInViewport(element) {
+      var rect = element.getBoundingClientRect();
+      return (
+        rect.top >= 0 &&
+        rect.left >= 0 &&
+        rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+        rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+      );
+    }
+  
+    handleScroll() {
+      this.elements.forEach((element) => {
+        if (this.isInViewport(element)) {
+          element.classList.add("animate");
+        }
+      });
+    }
+  }
+  
+  const slideUpAnimation = new SlideUp(".slide-up");
