@@ -103,3 +103,5 @@ class SlideUp {
   }
   
   const slideUpAnimation = new SlideUp(".slide-up");
+ 
+  
