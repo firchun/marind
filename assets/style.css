@@ -810,3 +810,34 @@ h1{
   border-radius: 10px;
   padding-right: 20px;
 }
+
+.news-content {
+  margin-bottom: 50px;
+}
+.news-content img{
+  width: 80%;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  justify-content: center;
+  display: flex;
+}
+.news-content .news-author-item{
+  border-radius: 20px;
+}
+.news-content .tags{
+ margin-top: 20px;
+ margin-bottom: 50px;
+}
+.news-content .tags-title{
+  background-color: #000;
+  border-radius: 10px;
+  color: white;
+  padding: 5px 10px 5px 10px;
+  margin-right: 10px;
+}
+.news-content .tags-item{
+  border-radius: 10px;
+  padding: 5px 10px 5px 10px;
+  margin-right: 10px;
+  border: #000 solid 2px;
+}
