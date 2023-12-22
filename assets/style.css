@@ -201,7 +201,10 @@ button.navbar-toggler {
     transition: background-color 0.3s;
     
 }
-
+.dropdown-item.active, 
+.dropdown-item:active{
+  background-color :red;
+}
 button.navbar-toggler:hover 
 button.navbar-toggler:active 
 {
@@ -612,16 +615,7 @@ h1{
   opacity: 1;
   background-color: white;
 }
-.slide-up {
-  opacity: 0;
-  transform: translateY(20px);
-  transition: opacity 0.5s ease, transform 0.5s ease;
-}
 
-.slide-up.animate {
-  opacity: 1;
-  transform: translateY(0);
-}
 .footer-header  {
   display: flex;
   align-items: center;

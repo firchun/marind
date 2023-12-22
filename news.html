@@ -6,7 +6,7 @@
     <meta http-equiv='expires' content='0'> 
     <meta http-equiv='pragma' content='no-cache'>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Marind Anim</title>
+    <title>Marind Anim | News</title>
     <!-- Bootstrap CSS -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
     <link href="assets/style.css" rel="stylesheet">
@@ -22,78 +22,62 @@
     <link rel="stylesheet" href="/assets/vendor/OwlCarousel/dist/assets/owl.theme.default.min.css">
 </head>
 <body >
-  <!-- start header -->
-    <header class="fixed-top bg-dark">
-        <div class="container ">
-            <nav class="navbar navbar-expand-lg navbar-dark">
-                <div class="container-fluid">
-                    <a class="navbar-brand py-3 me-2" href="/" aria-label="Bootstrap">
-                       <img src="assets/images/favicon.png"  height="50px" alt="favicon">
-                      </a>
-                    <button class="navbar-toggler " type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon "></span>
-                    </button>
-                    <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
-                        <!-- <a class="navbar-brand" href="#">Marind Anim</a> -->
-                        <ul class="navbar-nav  mb-2 mb-lg-0 ms-auto " style="font-size: 20px;">
-                            <li class="nav-item dropdown">
-                                <a href="index.html" class="nav-link text-white " aria-current="page" id="home">Home</a>
-                            </li>
-                            <li class="nav-item dropdown">
-                                <a href="news.html" class="nav-link text-white active" aria-current="page" id="news">News</a>
-                            </li>
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle text-white" href="#" id="warisan-budaya" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                  Cultural Heritage
-                                </a>
-                                <ul class="dropdown-menu" aria-labelledby="warisan-budaya">
-                                    <li><a class="dropdown-item" href="#">Submenu 1</a></li>
-                                    <li><a class="dropdown-item" href="#">Submenu 2</a></li>
-                                </ul>
-                            </li>
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle text-white" href="#" id="kuliner" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                    Culinary
-                                </a>
-                                <ul class="dropdown-menu" aria-labelledby="kuliner">
-                                    <li><a class="dropdown-item" href="#">Submenu 1</a></li>
-                                    <li><a class="dropdown-item" href="#">Submenu 2</a></li>
-                                </ul>
-                            </li>
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle text-white" href="#" id="Handcraft" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                    Handcraft
-                                </a>
-                                <ul class="dropdown-menu" aria-labelledby="Handcraft">
-                                    <li><a class="dropdown-item" href="#">Submenu 1</a></li>
-                                    <li><a class="dropdown-item" href="#">Submenu 2</a></li>
-                                </ul>
-                            </li>
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle text-white" href="#" id="event" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                    Event
-                                </a>
-                                <ul class="dropdown-menu" aria-labelledby="event">
-                                    <li><a class="dropdown-item" href="#">Submenu 1</a></li>
-                                    <li><a class="dropdown-item" href="#">Submenu 2</a></li>
-                                </ul>
-                            </li>
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle text-white" href="#" id="languange" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                   <i class="fa fa-languange"></i> EN
-                                </a>
-                                <ul class="dropdown-menu" aria-labelledby="event">
-                                    <li> <button onclick="switchLanguage('en')" class="dropdown-item  active" >English</button></li>
-                                    <li> <button onclick="switchLanguage('id')" class="dropdown-item text-white" >Indonesia</button></li>
-                                </ul>
-                            </li>
-                        </ul>
-                    </div>
+ <!-- start header -->
+ <header class="fixed-top bg-dark">
+    <div class="container ">
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand py-3 me-2" href="/" aria-label="Bootstrap">
+                   <img src="assets/images/favicon.png"  height="50px" alt="favicon">
+                  </a>
+                <button class="navbar-toggler " type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon "></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+                    <ul class="navbar-nav  mb-2 mb-lg-0 ms-auto " style="font-size: 20px;">
+                        <li class="nav-item dropdown">
+                            <a href="/" class="nav-link text-white " aria-current="page" id="home">Home</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                          <a href="galeri.html" class="nav-link text-white " aria-current="page" id="galery">Galery</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a href="news.html" class="nav-link text-white active" aria-current="page" id="news">News</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle text-white" href="#" id="warisan-budaya" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                              Cultural Heritage
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="warisan-budaya">
+                                <li><a class="dropdown-item"  id="kuliner" href="culinary.html">Culinary</a></li>
+                                <li><a class="dropdown-item" href="dances.html">Traditional Dances</a></li>
+                                <li><a class="dropdown-item" href="songs.html">Folk Songs</a></li>
+                                <li><a class="dropdown-item" href="clothing.html">Traditional Clothing</a></li>
+                                <li><a class="dropdown-item" href="about.html">About Marind Tribe</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                          <a href="handcraft.html" class="nav-link text-white " aria-current="page" id="Handcraft">Handcraft</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                          <a href="event.html" class="nav-link text-white " aria-current="page" id="event">Event</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle text-white" href="#" id="languange" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                               <i class="fa fa-languange"></i> EN
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="event">
+                                <li> <button onclick="switchLanguage('en')" class="dropdown-item  active" >English</button></li>
+                                <li> <button onclick="switchLanguage('id')" class="dropdown-item text-white" >Indonesia</button></li>
+                            </ul>
+                        </li>
+                    </ul>
                 </div>
-            </nav>
-        </div>
-    </header>
-    <!-- end header -->
+            </div>
+        </nav>
+    </div>
+</header>
+<!-- end header -->
  <!-- start carousel -->
  <section id="top" class="header">
 
