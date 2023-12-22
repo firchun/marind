@@ -22,6 +22,12 @@
     <link rel="stylesheet" href="/assets/vendor/OwlCarousel/dist/assets/owl.theme.default.min.css">
 </head>
 <body >
+    <!-- start loader -->
+  <section class="sec-loading" id="loader">
+    <div class="one">
+    </div>
+  </section>
+  <!-- end loader -->
   <!-- start header -->
   <header class="fixed-top bg-dark">
     <div class="container ">
@@ -297,13 +303,16 @@
 <!-- owl carousel -->
 <script src="/assets/vendor/OwlCarousel/dist/owl.carousel.min.js"></script>
 <script>
-AOS.init();
-$(document).ready(function(){
-$('.owl-carousel').owlCarousel({
-  stagePadding: 50,
-  loop:true,
-});
-});
-</script>
+    AOS.init();
+    $(document).ready(function(){
+      $('.owl-carousel').owlCarousel({
+        stagePadding: 50,
+        loop:true,
+      });
+      setTimeout(() => {
+          $('#loader').addClass('hidden');
+      }, 2000);
+    });
+  </script>
 </body>
 </html>

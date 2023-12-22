@@ -22,6 +22,12 @@
     <link rel="stylesheet" href="/assets/vendor/OwlCarousel/dist/assets/owl.theme.default.min.css">
 </head>
 <body >
+  <!-- start loader -->
+  <section class="sec-loading" id="loader">
+    <div class="one">
+    </div>
+  </section>
+  <!-- end loader -->
   <!-- start header -->
     <header class="fixed-top bg-dark">
         <div class="container ">
@@ -264,11 +270,11 @@
       <section class="container  ">
         <div class="header-content">
           <div class=" fw-bold text-center mt-4">
-              <h1 style="color: black;">We scale like a dream</h1>
+              <h1 style="color: black;">Popular news</h1>
               <hr class="bottom-title">
           </div>
           <div class="sub-title mb-4">
-              <span>Keterangan singkat</span>
+              <span>All the popular news</span>
           </div> 
         </div>
           <div class="row mt-4">
@@ -296,7 +302,7 @@
                   <p class="card-text">Ketua panitia, Pastor Andreas Fanumbi, mengatakan, tujuan festival tersebut digelar untuk merajut kebersamaan di Provinsi Papua Selatan. "Unt..
                   </p>
                   <div class="text-center">
-                    <a href="#" class="btn btn-secondary "><span id="read-news-2">Read News</span> <i class="fa fa-arrow-circle-right"></i>  
+                    <a href="news-detail.html" class="btn btn-secondary "><span id="read-news-2">Read News</span> <i class="fa fa-arrow-circle-right"></i>  
                     </a>
                   </div>
                 </div>
@@ -311,7 +317,7 @@
                   <p class="card-text">Ketua panitia, Pastor Andreas Fanumbi, mengatakan, tujuan festival tersebut digelar untuk merajut kebersamaan di Provinsi Papua Selatan. "Unt..
                   </p>
                   <div class="text-center">
-                    <a href="#" class="btn btn-secondary "><span id="read-news-3">Read News</span> <i class="fa fa-arrow-circle-right"></i>  
+                    <a href="news-detail.html" class="btn btn-secondary "><span id="read-news-3">Read News</span> <i class="fa fa-arrow-circle-right"></i>  
                     </a>
                   </div>
                 </div>
@@ -326,7 +332,7 @@
                   <p class="card-text">Ketua panitia, Pastor Andreas Fanumbi, mengatakan, tujuan festival tersebut digelar untuk merajut kebersamaan di Provinsi Papua Selatan. "Unt..
                   </p>
                   <div class="text-center">
-                    <a href="#" class="btn btn-secondary " ><span id="read-news-4">Read News</span> <i class="fa fa-arrow-circle-right"></i>  
+                    <a href="news-detail.html" class="btn btn-secondary " ><span id="read-news-4">Read News</span> <i class="fa fa-arrow-circle-right"></i>  
                     </a>
                   </div>
                 </div>
@@ -512,7 +518,13 @@
             <img src="assets/icon/vendors/css.png" alt="vendor">
           </div>
           <div class="item">
+            <img src="assets/icon/vendors/javascript.png" alt="vendor">
+          </div>
+          <div class="item">
             <img src="assets/icon/vendors/github.png" alt="vendor">
+          </div>
+          <div class="item">
+            <img src="assets/icon/vendors/figma.png" alt="vendor">
           </div>
           <div class="item">
             <img src="assets/icon/vendors/owl.jpg" alt="vendor">
@@ -696,6 +708,9 @@
       stagePadding: 50,
       loop:true,
     });
+    setTimeout(() => {
+        $('#loader').addClass('hidden');
+    }, 2000);
   });
 </script>
 </body>

@@ -835,3 +835,66 @@ h1{
   margin-right: 10px;
   border: #000 solid 2px;
 }
+:root {
+  --border-width: 7px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+
+
+.sec-loading {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 9999999999;
+  text-align: center;
+  place-items: center;
+  display: grid;
+  background-color: rgb(16,24,32);
+  transition: opacity 0.5s ease, visibility 0.5s ease;
+}
+
+.sec-loading .one {
+  height: 80px;
+  width: 80px;
+  border: var(--border-width) solid white;
+  transform: rotate(45deg);
+  border-radius: 0 50% 50% 50%;
+  position: relative;
+  animation: move 0.8s linear infinite alternate-reverse;
+}
+.sec-loading .one::before {
+  content: "";
+  position: absolute;
+  height: 55%;
+  width: 55%;
+  border-radius: 50%;
+  border: var(--border-width) solid transparent;
+  border-top-color: white;
+  border-bottom-color: white;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  animation: rotate 1s linear infinite;
+}
+
+@keyframes rotate {
+  to {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+}
+@keyframes move {
+  to {
+    transform: translateY(15px) rotate(45deg);
+  }
+}
+.hidden {
+  opacity: 0;
+  visibility: hidden;
+}

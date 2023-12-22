@@ -22,6 +22,12 @@
     <link rel="stylesheet" href="/assets/vendor/OwlCarousel/dist/assets/owl.theme.default.min.css">
 </head>
 <body >
+    <!-- start loader -->
+  <section class="sec-loading" id="loader">
+    <div class="one">
+    </div>
+  </section>
+  <!-- end loader -->
  <!-- start header -->
  <header class="fixed-top bg-dark">
     <div class="container ">
@@ -84,25 +90,13 @@
     <div id="myCarousel" class="carousel slide carousel-fade
     " data-bs-ride="carousel"  >
         <div class="carousel-inner">
-          <div class="carousel-item active" data-bs-interval="40000">
-            <video class="img-fluid" autoplay loop muted>
-              <source src="assets/video/Budaya.mp4" type="video/mp4" />
-            </video>
-           <div class="overlay"></div> 
-           <div class="container">
-              <div class="carousel-caption " data-bs-interval="5000">
-                <h1 id="carousel-title">We're Marind Anim</h1>
-                <p id="carousel-description">the Thick Culture in South Papua </p>
-              </div>
-            </div>
-          </div>
-          <div class="carousel-item">
+          <div class="carousel-item active">
            <img src="assets/images/slider.png" class="bd-placeholder-img" width="100%" height="100%" alt="corousel-image" loading="lazy">
            <div class="overlay"></div> 
            <div class="container">
               <div class="carousel-caption " data-bs-interval="5000">
-                <h1 id="carousel-title">We're Marind Anim</h1>
-                <p id="carousel-description">the Thick Culture in South Papua </p>
+                <h1 id="carousel-title">All News</h1>
+                <p id="carousel-description">We scale like a dream</p>
               </div>
             </div>
           </div>
@@ -111,21 +105,14 @@
             <div class="overlay"></div>
             <div class="container">
               <div class="carousel-caption">
-                <h1 id="carousel-title">We're Marind Anim</h1>
-                <p id="carousel-description">the Thick Culture in South Papua </p>
+                <h1 id="carousel-title">All News</h1>
+                <p id="carousel-description">We scale like a dream</p>
               </div>
             </div>
           </div>
           
         </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon " aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-          </button>
-          <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-          </button>
+       
      </div>
   </section>
    <!-- end carousel -->
@@ -134,11 +121,11 @@
         <section class="  ">
           <div class="header-content">
             <div class=" fw-bold text-center mt-4">
-                <h1 style="color: black;">We scale like a dream</h1>
+                <h1 style="color: black;">All News</h1>
                 <hr class="bottom-title">
             </div>
             <div class="sub-title mb-4">
-                <span>Keterangan singkat</span>
+                <span>We scale like a dream</span>
             </div> 
           </div>
           <div class="row mt-4 justify-content-center">
@@ -502,13 +489,16 @@
 <!-- owl carousel -->
 <script src="/assets/vendor/OwlCarousel/dist/owl.carousel.min.js"></script>
 <script>
-AOS.init();
-$(document).ready(function(){
-$('.owl-carousel').owlCarousel({
-  stagePadding: 50,
-  loop:true,
-});
-});
-</script>
+    AOS.init();
+    $(document).ready(function(){
+      $('.owl-carousel').owlCarousel({
+        stagePadding: 50,
+        loop:true,
+      });
+      setTimeout(() => {
+          $('#loader').addClass('hidden');
+      }, 2000);
+    });
+  </script>
 </body>
 </html>
