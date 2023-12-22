@@ -1,504 +1,546 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv='cache-control' content='no-cache'> 
-    <meta http-equiv='expires' content='0'> 
-    <meta http-equiv='pragma' content='no-cache'>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Marind Anim | News</title>
-    <!-- Bootstrap CSS -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
-    <link href="assets/style.css" rel="stylesheet">
-    <!-- icon -->
-    <link href="assets/vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
-    <link href="assets/vendor/fontawesome-free/css/brands.min.css" rel="stylesheet">
-    <link href="assets/vendor/fontawesome-free/css/slodi.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css">
-    <link rel="icon" href="assets/icon/favicon.png" type="image/x-icon">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css" />
-    <!-- owl carousel -->
-    <link rel="stylesheet" href="/assets/vendor/OwlCarousel/dist/assets/owl.carousel.min.css">
-    <link rel="stylesheet" href="/assets/vendor/OwlCarousel/dist/assets/owl.theme.default.min.css">
+  <meta charset="UTF-8">
+  <meta http-equiv='cache-control' content='no-cache'>
+  <meta http-equiv='expires' content='0'>
+  <meta http-equiv='pragma' content='no-cache'>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Marind Anim | News</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/style.css" rel="stylesheet">
+  <!-- icon -->
+  <link href="assets/vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
+  <link href="assets/vendor/fontawesome-free/css/brands.min.css" rel="stylesheet">
+  <link href="assets/vendor/fontawesome-free/css/slodi.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css">
+  <link rel="icon" href="assets/icon/favicon.png" type="image/x-icon">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css" />
+  <!-- owl carousel -->
+  <link rel="stylesheet" href="/assets/vendor/OwlCarousel/dist/assets/owl.carousel.min.css">
+  <link rel="stylesheet" href="/assets/vendor/OwlCarousel/dist/assets/owl.theme.default.min.css">
 </head>
-<body >
-    <!-- start loader -->
+
+<body>
+  <!-- start loader -->
   <section class="sec-loading" id="loader">
     <div class="one">
     </div>
   </section>
   <!-- end loader -->
- <!-- start header -->
- <header class="fixed-top bg-dark">
+  <!-- start header -->
+  <header class="fixed-top bg-dark">
     <div class="container ">
-        <nav class="navbar navbar-expand-lg navbar-dark">
-            <div class="container-fluid">
-                <a class="navbar-brand py-3 me-2" href="/" aria-label="Bootstrap">
-                   <img src="assets/images/favicon.png"  height="50px" alt="favicon">
-                  </a>
-                <button class="navbar-toggler " type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon "></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
-                    <ul class="navbar-nav  mb-2 mb-lg-0 ms-auto " style="font-size: 20px;">
-                        <li class="nav-item dropdown">
-                            <a href="/" class="nav-link text-white " aria-current="page" id="home">Home</a>
-                        </li>
-                        <li class="nav-item dropdown">
-                          <a href="galeri.html" class="nav-link text-white " aria-current="page" id="galery">Galery</a>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a href="news.html" class="nav-link text-white active" aria-current="page" id="news">News</a>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle text-white" href="#" id="warisan-budaya" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                              Cultural Heritage
-                            </a>
-                            <ul class="dropdown-menu" aria-labelledby="warisan-budaya">
-                                <li><a class="dropdown-item"  id="kuliner" href="culinary.html">Culinary</a></li>
-                                <li><a class="dropdown-item" href="dances.html">Traditional Dances</a></li>
-                                <li><a class="dropdown-item" href="songs.html">Folk Songs</a></li>
-                                <li><a class="dropdown-item" href="clothing.html">Traditional Clothing</a></li>
-                                <li><a class="dropdown-item" href="about.html">About Marind Tribe</a></li>
-                            </ul>
-                        </li>
-                        <li class="nav-item dropdown">
-                          <a href="handcraft.html" class="nav-link text-white " aria-current="page" id="Handcraft">Handcraft</a>
-                        </li>
-                        <li class="nav-item dropdown">
-                          <a href="event.html" class="nav-link text-white " aria-current="page" id="event">Event</a>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle text-white" href="#" id="languange" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                               <i class="fa fa-languange"></i> EN
-                            </a>
-                            <ul class="dropdown-menu" aria-labelledby="event">
-                                <li> <button onclick="switchLanguage('en')" class="dropdown-item  active" >English</button></li>
-                                <li> <button onclick="switchLanguage('id')" class="dropdown-item text-white" >Indonesia</button></li>
-                            </ul>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
+      <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand py-3 me-2" href="/" aria-label="Bootstrap">
+            <img src="assets/images/favicon.png" height="50px" alt="favicon">
+          </a>
+          <button class="navbar-toggler " type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01"
+            controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon "></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+            <ul class="navbar-nav  mb-2 mb-lg-0 ms-auto " style="font-size: 20px;">
+              <li class="nav-item dropdown">
+                <a href="/" class="nav-link text-white " aria-current="page" id="home">Home</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a href="galeri.html" class="nav-link text-white " aria-current="page" id="galery">Galery</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a href="news.html" class="nav-link text-white active" aria-current="page" id="news">News</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle text-white" href="#" id="warisan-budaya" role="button"
+                  data-bs-toggle="dropdown" aria-expanded="false">
+                  Cultural Heritage
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="warisan-budaya">
+                  <li><a class="dropdown-item" id="kuliner" href="culinary.html">Culinary</a></li>
+                  <li><a class="dropdown-item" href="dances.html">Traditional Dances</a></li>
+                  <li><a class="dropdown-item" href="songs.html">Folk Songs</a></li>
+                  <li><a class="dropdown-item" href="clothing.html">Traditional Clothing</a></li>
+                  <li><a class="dropdown-item" href="about.html">About Marind Tribe</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a href="handcraft.html" class="nav-link text-white " aria-current="page" id="Handcraft">Handcraft</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a href="event.html" class="nav-link text-white " aria-current="page" id="event">Event</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle text-white" href="#" id="languange" role="button"
+                  data-bs-toggle="dropdown" aria-expanded="false">
+                  <i class="fa fa-languange"></i> EN
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="event">
+                  <li> <button onclick="switchLanguage('en')" class="dropdown-item  active">English</button></li>
+                  <li> <button onclick="switchLanguage('id')" class="dropdown-item text-white">Indonesia</button></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
     </div>
-</header>
-<!-- end header -->
- <!-- start carousel -->
- <section id="top" class="header">
+  </header>
+  <!-- end header -->
+  <!-- start carousel -->
+  <section id="top" class="header">
 
     <div id="myCarousel" class="carousel slide carousel-fade
-    " data-bs-ride="carousel"  >
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-           <img src="assets/images/slider.png" class="bd-placeholder-img" width="100%" height="100%" alt="corousel-image" loading="lazy">
-           <div class="overlay"></div> 
-           <div class="container">
-              <div class="carousel-caption " data-bs-interval="5000">
-                <h1 id="carousel-title">All News</h1>
-                <p id="carousel-description">We scale like a dream</p>
-              </div>
+    " data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="assets/images/slider.png" class="bd-placeholder-img" width="100%" height="100%" alt="corousel-image"
+            loading="lazy">
+          <div class="overlay"></div>
+          <div class="container">
+            <div class="carousel-caption " data-bs-interval="5000">
+              <h1 id="carousel-title">All News</h1>
+              <p id="carousel-description">We scale like a dream</p>
             </div>
           </div>
-          <div class="carousel-item ">
-            <img src="assets/images/contoh3.jpg" class="bd-placeholder-img" width="100%" height="100%" alt="corousel-image" loading="lazy">
-            <div class="overlay"></div>
-            <div class="container">
-              <div class="carousel-caption">
-                <h1 id="carousel-title">All News</h1>
-                <p id="carousel-description">We scale like a dream</p>
-              </div>
-            </div>
-          </div>
-          
         </div>
-       
-     </div>
-  </section>
-   <!-- end carousel -->
-    <!-- start news -->
-    <div class="container-rounded pb-4">
-        <section class="  ">
-          <div class="header-content">
-            <div class=" fw-bold text-center mt-4">
-                <h1 style="color: black;">All News</h1>
-                <hr class="bottom-title">
-            </div>
-            <div class="sub-title mb-4">
-                <span>We scale like a dream</span>
-            </div> 
-          </div>
-          <div class="row mt-4 justify-content-center">
-            <div class="col-lg-3 col-md-12 mb-4 justify-content-center">
-                <div class="input-group  search ">
-                    <input type="search" class="form-control" placeholder="Search.." aria-label="Search.." aria-describedby="button-addon2">
-                    <button class="btn btn-secondary" type="button" id="button-addon2"><span class="d-none d-lg-block">Search</span><i class="fa fa-search  d-block d-lg-none px-2"></i> </button>
-                  </div>
-                  <div class="category">
-                    <h4 class="category-title fw-bold">Category</h4>
-                    <div class="list-group category-content list-group-numbered">
-                        <a href="#" class="list-group-item list-group-item-action active" aria-current="true">
-                        Semua Category
-                        </a>
-                        <a href="#" class="list-group-item list-group-item-action">Populasi <span class="badge bg-danger rounded-pill">2</span></a>
-                        <a href="#" class="list-group-item list-group-item-action">Pendidikan <span class="badge bg-danger rounded-pill">3</span></a>
-                        <a href="#" class="list-group-item list-group-item-action">Pesta Budaya <span class="badge bg-danger rounded-pill">5</span></a>
-                      </div>
-                  </div>
-            </div>
-            <div class="col-lg-6 col-md-12">
-            <div class="row ">
-              <div class="col-lg-4 col-md-6 ">
-                <div class="card" data-aos="fade-up">
-                  <img src="assets/images/contoh.JPG" class="card-img-top" alt="berita">
-                  <div class="card-body">
-                    <h5 class="card-title font-weight-bold">Festival KaliMaro di Merauke Digelar, Pastor Andreas: Mengangkat Martabat Suku Marind dan Yeinan
-                    </h5>
-                    <p class="card-text">Ketua panitia, Pastor Andreas Fanumbi, mengatakan, tujuan festival tersebut digelar untuk merajut kebersamaan di Provinsi Papua Selatan. "Unt..
-                    </p>
-                    <div class="text-center">
-                      <a href="news-detail.html" class="btn btn-secondary " ><span id="read-news-1">Read News</span> <i class="fa fa-arrow-circle-right"></i>  
-                      </a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-lg-4 col-md-6">
-                <div class="card " data-aos="fade-up">
-                  <img src="assets/images/contoh3.jpg" class="card-img-top" alt="berita">
-                  <div class="card-body">
-                    <h5 class="card-title font-weight-bold">Festival KaliMaro di Merauke Digelar, Pastor Andreas: Mengangkat Martabat Suku Marind dan Yeinan
-                    </h5>
-                    <p class="card-text">Ketua panitia, Pastor Andreas Fanumbi, mengatakan, tujuan festival tersebut digelar untuk merajut kebersamaan di Provinsi Papua Selatan. "Unt..
-                    </p>
-                    <div class="text-center">
-                      <a href="news-detail.html" class="btn btn-secondary "><span id="read-news-2">Read News</span> <i class="fa fa-arrow-circle-right"></i>  
-                      </a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-lg-4 col-md-6">
-                <div class="card" data-aos="fade-up">
-                  <img src="assets/images/contoh.JPG" class="card-img-top" alt="berita">
-                  <div class="card-body">
-                    <h5 class="card-title font-weight-bold">Festival KaliMaro di Merauke Digelar, Pastor Andreas: Mengangkat Martabat Suku Marind dan Yeinan
-                    </h5>
-                    <p class="card-text">Ketua panitia, Pastor Andreas Fanumbi, mengatakan, tujuan festival tersebut digelar untuk merajut kebersamaan di Provinsi Papua Selatan. "Unt..
-                    </p>
-                    <div class="text-center">
-                      <a href="news-detail.html" class="btn btn-secondary "><span id="read-news-3">Read News</span> <i class="fa fa-arrow-circle-right"></i>  
-                      </a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-lg-4 col-md-6">
-                <div class="card" data-aos="fade-up">
-                  <img src="assets/images/contoh.JPG" class="card-img-top" alt="berita">
-                  <div class="card-body">
-                    <h5 class="card-title font-weight-bold">Festival KaliMaro di Merauke Digelar, Pastor Andreas: Mengangkat Martabat Suku Marind dan Yeinan
-                    </h5>
-                    <p class="card-text">Ketua panitia, Pastor Andreas Fanumbi, mengatakan, tujuan festival tersebut digelar untuk merajut kebersamaan di Provinsi Papua Selatan. "Unt..
-                    </p>
-                    <div class="text-center">
-                      <a href="news-detail.html" class="btn btn-secondary " ><span id="read-news-4">Read News</span> <i class="fa fa-arrow-circle-right"></i>  
-                      </a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-lg-4 col-md-6">
-                <div class="card" data-aos="fade-up">
-                  <img src="assets/images/contoh.JPG" class="card-img-top" alt="berita">
-                  <div class="card-body">
-                    <h5 class="card-title font-weight-bold">Festival KaliMaro di Merauke Digelar, Pastor Andreas: Mengangkat Martabat Suku Marind dan Yeinan
-                    </h5>
-                    <p class="card-text">Ketua panitia, Pastor Andreas Fanumbi, mengatakan, tujuan festival tersebut digelar untuk merajut kebersamaan di Provinsi Papua Selatan. "Unt..
-                    </p>
-                    <div class="text-center">
-                      <a href="news-detail.html" class="btn btn-secondary " ><span id="read-news-4">Read News</span> <i class="fa fa-arrow-circle-right"></i>  
-                      </a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-lg-4 col-md-6">
-                <div class="card" data-aos="fade-up">
-                  <img src="assets/images/contoh.JPG" class="card-img-top" alt="berita">
-                  <div class="card-body">
-                    <h5 class="card-title font-weight-bold">Festival KaliMaro di Merauke Digelar, Pastor Andreas: Mengangkat Martabat Suku Marind dan Yeinan
-                    </h5>
-                    <p class="card-text">Ketua panitia, Pastor Andreas Fanumbi, mengatakan, tujuan festival tersebut digelar untuk merajut kebersamaan di Provinsi Papua Selatan. "Unt..
-                    </p>
-                    <div class="text-center">
-                      <a href="news-detail.html" class="btn btn-secondary " ><span id="read-news-4">Read News</span> <i class="fa fa-arrow-circle-right"></i>  
-                      </a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-lg-4 col-md-6">
-                <div class="card" data-aos="fade-up">
-                  <img src="assets/images/contoh.JPG" class="card-img-top" alt="berita">
-                  <div class="card-body">
-                    <h5 class="card-title font-weight-bold">Festival KaliMaro di Merauke Digelar, Pastor Andreas: Mengangkat Martabat Suku Marind dan Yeinan
-                    </h5>
-                    <p class="card-text">Ketua panitia, Pastor Andreas Fanumbi, mengatakan, tujuan festival tersebut digelar untuk merajut kebersamaan di Provinsi Papua Selatan. "Unt..
-                    </p>
-                    <div class="text-center">
-                      <a href="news-detail.html" class="btn btn-secondary " ><span id="read-news-4">Read News</span> <i class="fa fa-arrow-circle-right"></i>  
-                      </a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-lg-4 col-md-6">
-                <div class="card" data-aos="fade-up">
-                  <img src="assets/images/contoh.JPG" class="card-img-top" alt="berita">
-                  <div class="card-body">
-                    <h5 class="card-title font-weight-bold">Festival KaliMaro di Merauke Digelar, Pastor Andreas: Mengangkat Martabat Suku Marind dan Yeinan
-                    </h5>
-                    <p class="card-text">Ketua panitia, Pastor Andreas Fanumbi, mengatakan, tujuan festival tersebut digelar untuk merajut kebersamaan di Provinsi Papua Selatan. "Unt..
-                    </p>
-                    
-                    <div class="text-center">
-                      <a href="news-detail.html" class="btn btn-secondary " ><span id="read-news-4">Read News</span> <i class="fa fa-arrow-circle-right"></i>  
-                      </a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="text-center mt-4">
-                <nav aria-label="Page navigation example">
-                    <ul class="pagination justify-content-center">
-                      <li class="page-item disabled">
-                        <a class="page-link " href="#" tabindex="-1" aria-disabled="true">Previous</a>
-                      </li>
-                      <li class="page-item active"><a class="page-link" href="#">1</a></li>
-                      <li class="page-item"><a class="page-link" href="#">2</a></li>
-                      <li class="page-item"><a class="page-link" href="#">3</a></li>
-                      <li class="page-item">
-                        <a class="page-link" href="#">Next</a>
-                      </li>
-                    </ul>
-                  </nav>
-            </div>
-            </div>
-            <div class="col-lg-3 col-md-12">
-                <div class="populer-news">
-                    <h4 class="category-title fw-bold">Baca Juga</h4>
-                    <ul class="list-group list-group-flush">
-                        <li class="list-group-item px-2 bg-white  ">
-                            <div class="d-flex">
-                                    <img src="assets/images/contoh.JPG"  alt="berita">
-                                    <div class="">
-                                        <a href="news-detail.html" class="text-black fw-bold">Festifal Kali Maro di..</a><br>
-                                        <small class="text-muted">5 Views</small>
-                                    </div>
-                            </div>
-                        </li>
-                        <li class="list-group-item px-2 bg-white ">
-                            <div class="d-flex">
-                                    <img src="assets/images/contoh.JPG"  alt="berita">
-                                    <div class="">
-                                        <a href="news-detail.html" class="text-black fw-bold">Festifal Kali Maro di..</a><br>
-                                        <small class="text-muted">5 Views</small>
-                                    </div>
-                            </div>
-                        </li>
-                        <li class="list-group-item px-2 bg-white ">
-                            <div class="d-flex">
-                                    <img src="assets/images/contoh.JPG"  alt="berita">
-                                    <div class="">
-                                        <a href="news-detail.html" class="text-black fw-bold">Festifal Kali Maro di..</a><br>
-                                        <small class="text-muted">5 Views</small>
-                                    </div>
-                            </div>
-                        </li>
-                      </ul>
-                  </div>
+        <div class="carousel-item ">
+          <img src="assets/images/contoh3.jpg" class="bd-placeholder-img" width="100%" height="100%"
+            alt="corousel-image" loading="lazy">
+          <div class="overlay"></div>
+          <div class="container">
+            <div class="carousel-caption">
+              <h1 id="carousel-title">All News</h1>
+              <p id="carousel-description">We scale like a dream</p>
             </div>
           </div>
-           
-           
+        </div>
+
+      </div>
+
+    </div>
   </section>
+  <!-- end carousel -->
+  <!-- start news -->
+  <div class="container-rounded pb-4">
+    <section class="  ">
+      <div class="header-content">
+        <div class=" fw-bold text-center mt-4">
+          <h1 style="color: black;">All News</h1>
+          <hr class="bottom-title">
+        </div>
+        <div class="sub-title mb-4">
+          <span>We scale like a dream</span>
+        </div>
+      </div>
+      <div class="row mt-4 justify-content-center">
+        <div class="col-lg-3 col-md-12 mb-4 justify-content-center">
+          <div class="input-group  search ">
+            <input type="search" class="form-control" placeholder="Search.." aria-label="Search.."
+              aria-describedby="button-addon2">
+            <button class="btn btn-secondary" type="button" id="button-addon2"><span
+                class="d-none d-lg-block">Search</span><i class="fa fa-search  d-block d-lg-none px-2"></i> </button>
+          </div>
+          <div class="category">
+            <h4 class="category-title fw-bold">Category</h4>
+            <div class="list-group category-content list-group-numbered">
+              <a href="#" class="list-group-item list-group-item-action active" aria-current="true">
+                Semua Category
+              </a>
+              <a href="#" class="list-group-item list-group-item-action">Populasi <span
+                  class="badge bg-danger rounded-pill">2</span></a>
+              <a href="#" class="list-group-item list-group-item-action">Pendidikan <span
+                  class="badge bg-danger rounded-pill">3</span></a>
+              <a href="#" class="list-group-item list-group-item-action">Pesta Budaya <span
+                  class="badge bg-danger rounded-pill">5</span></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6 col-md-12">
+          <div class="row ">
+            <div class="col-lg-4 col-md-6 ">
+              <div class="card" data-aos="fade-up">
+                <img src="assets/images/contoh.JPG" class="card-img-top" alt="berita">
+                <div class="card-body">
+                  <h5 class="card-title font-weight-bold">Festival KaliMaro di Merauke Digelar, Pastor Andreas:
+                    Mengangkat Martabat Suku Marind dan Yeinan
+                  </h5>
+                  <p class="card-text">Ketua panitia, Pastor Andreas Fanumbi, mengatakan, tujuan festival tersebut
+                    digelar untuk merajut kebersamaan di Provinsi Papua Selatan. "Unt..
+                  </p>
+                  <div class="text-center">
+                    <a href="news-detail.html" class="btn btn-secondary "><span id="read-news-1">Read News</span> <i
+                        class="fa fa-arrow-circle-right"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+              <div class="card " data-aos="fade-up">
+                <img src="assets/images/contoh3.jpg" class="card-img-top" alt="berita">
+                <div class="card-body">
+                  <h5 class="card-title font-weight-bold">Festival KaliMaro di Merauke Digelar, Pastor Andreas:
+                    Mengangkat Martabat Suku Marind dan Yeinan
+                  </h5>
+                  <p class="card-text">Ketua panitia, Pastor Andreas Fanumbi, mengatakan, tujuan festival tersebut
+                    digelar untuk merajut kebersamaan di Provinsi Papua Selatan. "Unt..
+                  </p>
+                  <div class="text-center">
+                    <a href="news-detail.html" class="btn btn-secondary "><span id="read-news-2">Read News</span> <i
+                        class="fa fa-arrow-circle-right"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+              <div class="card" data-aos="fade-up">
+                <img src="assets/images/contoh.JPG" class="card-img-top" alt="berita">
+                <div class="card-body">
+                  <h5 class="card-title font-weight-bold">Festival KaliMaro di Merauke Digelar, Pastor Andreas:
+                    Mengangkat Martabat Suku Marind dan Yeinan
+                  </h5>
+                  <p class="card-text">Ketua panitia, Pastor Andreas Fanumbi, mengatakan, tujuan festival tersebut
+                    digelar untuk merajut kebersamaan di Provinsi Papua Selatan. "Unt..
+                  </p>
+                  <div class="text-center">
+                    <a href="news-detail.html" class="btn btn-secondary "><span id="read-news-3">Read News</span> <i
+                        class="fa fa-arrow-circle-right"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+              <div class="card" data-aos="fade-up">
+                <img src="assets/images/contoh.JPG" class="card-img-top" alt="berita">
+                <div class="card-body">
+                  <h5 class="card-title font-weight-bold">Festival KaliMaro di Merauke Digelar, Pastor Andreas:
+                    Mengangkat Martabat Suku Marind dan Yeinan
+                  </h5>
+                  <p class="card-text">Ketua panitia, Pastor Andreas Fanumbi, mengatakan, tujuan festival tersebut
+                    digelar untuk merajut kebersamaan di Provinsi Papua Selatan. "Unt..
+                  </p>
+                  <div class="text-center">
+                    <a href="news-detail.html" class="btn btn-secondary "><span id="read-news-4">Read News</span> <i
+                        class="fa fa-arrow-circle-right"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+              <div class="card" data-aos="fade-up">
+                <img src="assets/images/contoh.JPG" class="card-img-top" alt="berita">
+                <div class="card-body">
+                  <h5 class="card-title font-weight-bold">Festival KaliMaro di Merauke Digelar, Pastor Andreas:
+                    Mengangkat Martabat Suku Marind dan Yeinan
+                  </h5>
+                  <p class="card-text">Ketua panitia, Pastor Andreas Fanumbi, mengatakan, tujuan festival tersebut
+                    digelar untuk merajut kebersamaan di Provinsi Papua Selatan. "Unt..
+                  </p>
+                  <div class="text-center">
+                    <a href="news-detail.html" class="btn btn-secondary "><span id="read-news-4">Read News</span> <i
+                        class="fa fa-arrow-circle-right"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+              <div class="card" data-aos="fade-up">
+                <img src="assets/images/contoh.JPG" class="card-img-top" alt="berita">
+                <div class="card-body">
+                  <h5 class="card-title font-weight-bold">Festival KaliMaro di Merauke Digelar, Pastor Andreas:
+                    Mengangkat Martabat Suku Marind dan Yeinan
+                  </h5>
+                  <p class="card-text">Ketua panitia, Pastor Andreas Fanumbi, mengatakan, tujuan festival tersebut
+                    digelar untuk merajut kebersamaan di Provinsi Papua Selatan. "Unt..
+                  </p>
+                  <div class="text-center">
+                    <a href="news-detail.html" class="btn btn-secondary "><span id="read-news-4">Read News</span> <i
+                        class="fa fa-arrow-circle-right"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+              <div class="card" data-aos="fade-up">
+                <img src="assets/images/contoh.JPG" class="card-img-top" alt="berita">
+                <div class="card-body">
+                  <h5 class="card-title font-weight-bold">Festival KaliMaro di Merauke Digelar, Pastor Andreas:
+                    Mengangkat Martabat Suku Marind dan Yeinan
+                  </h5>
+                  <p class="card-text">Ketua panitia, Pastor Andreas Fanumbi, mengatakan, tujuan festival tersebut
+                    digelar untuk merajut kebersamaan di Provinsi Papua Selatan. "Unt..
+                  </p>
+                  <div class="text-center">
+                    <a href="news-detail.html" class="btn btn-secondary "><span id="read-news-4">Read News</span> <i
+                        class="fa fa-arrow-circle-right"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+              <div class="card" data-aos="fade-up">
+                <img src="assets/images/contoh.JPG" class="card-img-top" alt="berita">
+                <div class="card-body">
+                  <h5 class="card-title font-weight-bold">Festival KaliMaro di Merauke Digelar, Pastor Andreas:
+                    Mengangkat Martabat Suku Marind dan Yeinan
+                  </h5>
+                  <p class="card-text">Ketua panitia, Pastor Andreas Fanumbi, mengatakan, tujuan festival tersebut
+                    digelar untuk merajut kebersamaan di Provinsi Papua Selatan. "Unt..
+                  </p>
+
+                  <div class="text-center">
+                    <a href="news-detail.html" class="btn btn-secondary "><span id="read-news-4">Read News</span> <i
+                        class="fa fa-arrow-circle-right"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="text-center mt-4">
+            <nav aria-label="Page navigation example">
+              <ul class="pagination justify-content-center">
+                <li class="page-item disabled">
+                  <a class="page-link " href="#" tabindex="-1" aria-disabled="true">Previous</a>
+                </li>
+                <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                <li class="page-item">
+                  <a class="page-link" href="#">Next</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-12">
+          <div class="populer-news">
+            <h4 class="category-title fw-bold">Baca Juga</h4>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item px-2 bg-white  ">
+                <div class="d-flex">
+                  <img src="assets/images/contoh.JPG" alt="berita">
+                  <div class="">
+                    <a href="news-detail.html" class="text-black fw-bold">Festifal Kali Maro di..</a><br>
+                    <small class="text-muted">5 Views</small>
+                  </div>
+                </div>
+              </li>
+              <li class="list-group-item px-2 bg-white ">
+                <div class="d-flex">
+                  <img src="assets/images/contoh.JPG" alt="berita">
+                  <div class="">
+                    <a href="news-detail.html" class="text-black fw-bold">Festifal Kali Maro di..</a><br>
+                    <small class="text-muted">5 Views</small>
+                  </div>
+                </div>
+              </li>
+              <li class="list-group-item px-2 bg-white ">
+                <div class="d-flex">
+                  <img src="assets/images/contoh.JPG" alt="berita">
+                  <div class="">
+                    <a href="news-detail.html" class="text-black fw-bold">Festifal Kali Maro di..</a><br>
+                    <small class="text-muted">5 Views</small>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+
+    </section>
   </div>
   <!-- end news -->
- <!-- start footer -->
- <section class="">
+  <!-- start footer -->
+  <section class="">
     <footer class="site-footer">
-        <div class="container">
-          <div class="footer-header">
-            <div class="divider"></div>
-            <img src="assets/images/favicon.png" alt="icon"/>
-            <div class="divider"></div>
-          </div>
-          <div class="row">
-            <div class="col-lg-4 col-md-6 ">
-              <div class="footer-logo">
-                <img src="assets/images/musamus.png" alt="unmus">
-                <img src="assets/images/polines.png" alt="polines">
-              </div>
-            </div>
-            <div class="col-lg-8 col-md-6 ">
-              <div class="row">
-                <div class="col-lg-3 col-6">
-                  <hr class="border-white border-3">
-                  <h4>Marind Anim</h4>
-                  <div class="vertical-links">
-                    <a href="#" >Home</a>
-                    <a href="#" >Contact us</a>
-                    <a href="#" >About us</a>
-                    <a href="#" >Contribute</a>
-                    <a href="#" >Privaci Policy</a>
-                  </div>
-                </div>
-                <div class="col-lg-3  col-6">
-                  <hr class="border-primary border-3">
-                  <h4>Ikuti Kami</h4>
-                  <div class="vertical-links">
-                    <a href="#" class="text-warning">Instagram</a>
-                    <a href="#" class="text-danger">YouTube</a>
-                    <a href="#" class="text-primary">Facebook</a>
-                    <a href="#" class="text-success">Tik-tok</a>
-                    <a href="#" class="text-primary">Twitter</a>
-                  </div>
-                </div>
-                <div class="col-lg-3 col-6">
-                  <hr class="border-warning border-3 ">
-                  <h4>Warisan Budaya</h4>
-                  <div class="vertical-links">
-                    <a href="#" >Tarian Adat</a>
-                    <a href="#" >Lagu Daerah</a>
-                    <a href="#" >Pakaian Adat</a>
-                    <a href="#" >Kuliner</a>
-                  </div>
-                </div>
-                <div class="col-lg-3 col-6">
-                  <hr class="border-danger border-3 ">
-                  <h4>Handcraft</h4>
-                  <div class="vertical-links">
-                    <a href="#" >Kandara/Tifa</a>
-                    <a href="#" >Noken Kasuari</a>
-                    <a href="#" >Patung Marind</a>
-                    <a href="#" >Tanduk Rusa</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-lg-4 col-md-6 col-12">
-              <div class="footer-logo">
-                <img src="assets/images/techcomfest.png" alt="techcomfest">
-              </div>
-            </div>
-            <div class="col-lg-8 col-md-6 col-12">
-              <div class="row">
-                <div class="col-lg-3 col-6">
-                  <hr class="border-white border-3">
-                  <h4>Sejarah</h4>
-                  <div class="vertical-links">
-                    <a href="#" >Asaul-usul</a>
-                    <a href="#" >Tentang Suku Marind</a>
-                    <a href="#" >Persebaran</a>
-                  </div>
-                </div>
-                <div class="col-lg-3  col-6">
-                  <hr class="border-primary border-3">
-                  <h4>News</h4>
-                  <div class="vertical-links">
-                    <a href="#" >Suku Marind di Merauke</a>
-                    <a href="#" >Populasi</a>
-                    <a href="#" >Pendidikan</a>
-                    <a href="#" >Pesta Budaya</a>
-                  </div>
-                </div>
-                <div class="col-lg-3 col-6">
-                  <hr class="border-warning border-3 ">
-                  <h4>Galery</h4>
-                  <div class="vertical-links">
-                    <a href="#" >Berburu</a>
-                    <a href="#" >Acara Adat</a>
-                    <a href="#" >Penyambutan</a>
-                  </div>
-                </div>
-                <div class="col-lg-3 col-6">
-                  <hr class="border-danger border-3 ">
-                  <h4>Event</h4>
-                  <div class="vertical-links">
-                    <a href="#" >Perarakan sakramen bunda maria</a>
-                    <a href="#" >Dahunu anggai</a>
-                    <a href="#" >Perarakan Sakramen maha kudus</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-lg-8 col-12">
-              <h4 id="about">About</h4>
-              <p class="text-footer-about" id="about-content">Scanfcode.com CODE WANTS TO BE SIMPLE is an initiative to help the upcoming programmers with the code. Scanfcode focuses on providing the most efficient code or snippets as the code wants to be simple. We will help programmers build up concepts in different programming languages that include C, C++, Java, HTML, CSS, Bootstrap, JavaScript, PHP, Android, SQL and Algorithm.</p>
-            </div>
-            <div class="col-lg-4 col-12">
-              <h5 id="subscribe">Subscribe</h5>
-                <form class="input-group my-3">
-                  <input type="email" class="form-control form-subscribe" placeholder="Email Address" aria-label="Email Address" aria-describedby="button-addon2" required> 
-                  <button class="btn btn-outline-secondary" type="submit" id="subscribe">Subscribe</button>
-                </form>
-            </div>
-          </div>
-          <hr>
+      <div class="container">
+        <div class="footer-header">
+          <div class="divider"></div>
+          <img src="assets/images/favicon.png" alt="icon" />
+          <div class="divider"></div>
         </div>
-        <div class="container">
-          <div class="row">
-            <div class="col-md-8 col-sm-6 col-xs-12">
-              <p class="copyright-text">Copyright &copy; 2023 All Rights Reserved by 
-           <a href="#">Marind Anim</a>.
-              </p>
+        <div class="row">
+          <div class="col-lg-4 col-md-6 ">
+            <div class="footer-logo">
+              <img src="assets/images/musamus.png" alt="unmus">
+              <img src="assets/images/polines.png" alt="polines">
             </div>
-  
-            <div class="col-md-4 col-sm-6 col-xs-12">
-              <ul class="social-icons">
-                <li><a class="facebook" href="#"><i class="fab fa-facebook-f"></i></a></li>
-                <li><a class="twitter" href="#"><i class="fab fa-twitter"></i></a></li>
-                <li><a class="dribbble" href="#"><i class="fab fa-dribbble"></i></a></li>
-                <li><a class="linkedin" href="#"><i class="fab fa-linkedin"></i></a></li>   
-                <li><a class="back-to-top" href="#top"> <i class="fas fa-angle-up"></i></a></li>   
-              </ul>
+          </div>
+          <div class="col-lg-8 col-md-6 ">
+            <div class="row">
+              <div class="col-lg-3 col-6">
+                <hr class="border-white border-3">
+                <h4>Marind Anim</h4>
+                <div class="vertical-links">
+                  <a href="/">Home</a>
+                  <a href="#">Contact us</a>
+                  <a href="about.html">About us</a>
+                  <a href="#">Contribute</a>
+                  <a href="#">Privaci Policy</a>
+                </div>
+              </div>
+              <div class="col-lg-3  col-6">
+                <hr class="border-primary border-3">
+                <h4>Ikuti Kami</h4>
+                <div class="vertical-links">
+                  <a href="#" class="text-warning">Instagram</a>
+                  <a href="#" class="text-danger">YouTube</a>
+                  <a href="#" class="text-primary">Facebook</a>
+                  <a href="#" class="text-success">Tik-tok</a>
+                  <a href="#" class="text-primary">Twitter</a>
+                </div>
+              </div>
+              <div class="col-lg-3 col-6">
+                <hr class="border-warning border-3 ">
+                <h4>Warisan Budaya</h4>
+                <div class="vertical-links">
+                  <a href="dances.html">Tarian Adat</a>
+                  <a href="songs.html">Lagu Daerah</a>
+                  <a href="clothing.html">Pakaian Adat</a>
+                  <a href="culinary.html">Kuliner</a>
+                </div>
+              </div>
+              <div class="col-lg-3 col-6">
+                <hr class="border-danger border-3 ">
+                <h4>Handcraft</h4>
+                <div class="vertical-links">
+                  <a href="handcraft.html">Kandara/Tifa</a>
+                  <a href="handcraft.html">Noken Kasuari</a>
+                  <a href="handcraft.html">Patung Marind</a>
+                  <a href="handcraft.html">Tanduk Rusa</a>
+                </div>
+              </div>
             </div>
           </div>
         </div>
-  </footer>
-</section>
-<!-- end footer -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.10.2/umd/popper.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.min.js"></script>
+        <div class="row">
+          <div class="col-lg-4 col-md-6 col-12">
+            <div class="footer-logo">
+              <img src="assets/images/techcomfest.png" alt="techcomfest">
+            </div>
+          </div>
+          <div class="col-lg-8 col-md-6 col-12">
+            <div class="row">
+              <div class="col-lg-3 col-6">
+                <hr class="border-white border-3">
+                <h4>Sejarah</h4>
+                <div class="vertical-links">
+                  <a href="about.html">Asaul-usul</a>
+                  <a href="about.html">Tentang Suku Marind</a>
+                  <a href="about.html">Persebaran</a>
+                </div>
+              </div>
+              <div class="col-lg-3  col-6">
+                <hr class="border-primary border-3">
+                <h4>News</h4>
+                <div class="vertical-links">
+                  <a href="news.html">Suku Marind di Merauke</a>
+                  <a href="news.html">Populasi</a>
+                  <a href="news.html">Pendidikan</a>
+                  <a href="news.html">Pesta Budaya</a>
+                </div>
+              </div>
+              <div class="col-lg-3 col-6">
+                <hr class="border-warning border-3 ">
+                <h4>Galery</h4>
+                <div class="vertical-links">
+                  <a href="galeri.html">Berburu</a>
+                  <a href="galeri.html">Acara Adat</a>
+                  <a href="galeri.html">Penyambutan</a>
+                </div>
+              </div>
+              <div class="col-lg-3 col-6">
+                <hr class="border-danger border-3 ">
+                <h4>Event</h4>
+                <div class="vertical-links">
+                  <a href="event.html">Perarakan sakramen bunda maria</a>
+                  <a href="event.html">Dahunu anggai</a>
+                  <a href="event.html">Perarakan Sakramen maha kudus</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-8 col-12">
+            <h4 id="about">About</h4>
+            <p class="text-footer-about" id="about-content">Scanfcode.com CODE WANTS TO BE SIMPLE is an initiative to
+              help the upcoming programmers with the code. Scanfcode focuses on providing the most efficient code or
+              snippets as the code wants to be simple. We will help programmers build up concepts in different
+              programming languages that include C, C++, Java, HTML, CSS, Bootstrap, JavaScript, PHP, Android, SQL and
+              Algorithm.</p>
+          </div>
+          <div class="col-lg-4 col-12">
+            <h5 id="subscribe">Subscribe</h5>
+            <form class="input-group my-3">
+              <input type="email" class="form-control form-subscribe" placeholder="Email Address"
+                aria-label="Email Address" aria-describedby="button-addon2" required>
+              <button class="btn btn-outline-secondary" type="submit" id="subscribe">Subscribe</button>
+            </form>
+          </div>
+        </div>
+        <hr>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8 col-sm-6 col-xs-12">
+            <p class="copyright-text">Copyright &copy; 2023 All Rights Reserved by
+              <a href="#">Marind Anim</a>.
+            </p>
+          </div>
 
-<script src="assets/script.js"></script>
+          <div class="col-md-4 col-sm-6 col-xs-12">
+            <ul class="social-icons">
+              <li><a class="facebook" href="#"><i class="fab fa-facebook-f"></i></a></li>
+              <li><a class="twitter" href="#"><i class="fab fa-twitter"></i></a></li>
+              <li><a class="dribbble" href="#"><i class="fab fa-dribbble"></i></a></li>
+              <li><a class="linkedin" href="#"><i class="fab fa-linkedin"></i></a></li>
+              <li><a class="back-to-top" href="#top"> <i class="fas fa-angle-up"></i></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </section>
+  <!-- end footer -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.10.2/umd/popper.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.min.js"></script>
 
-<!-- Include jQuery -->
-<script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+  <script src="assets/script.js"></script>
 
-<!-- Include Magnific Popup CSS and JS files -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
-<!-- aos animation -->
-<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
-<!-- owl carousel -->
-<script src="/assets/vendor/OwlCarousel/dist/owl.carousel.min.js"></script>
-<script>
+  <!-- Include jQuery -->
+  <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+
+  <!-- Include Magnific Popup CSS and JS files -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
+  <!-- aos animation -->
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <!-- owl carousel -->
+  <script src="/assets/vendor/OwlCarousel/dist/owl.carousel.min.js"></script>
+  <script>
     AOS.init();
-    $(document).ready(function(){
+    $(document).ready(function () {
       $('.owl-carousel').owlCarousel({
         stagePadding: 50,
-        loop:true,
+        loop: true,
       });
       setTimeout(() => {
-          $('#loader').addClass('hidden');
+        $('#loader').addClass('hidden');
       }, 2000);
     });
   </script>
 </body>
+
 </html>
